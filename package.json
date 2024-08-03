@@ -13,6 +13,7 @@
     "axios": "^1.7.3",
     "cheerio": "^1.0.0-rc.12",
     "chromedriver": "^127.0.1",
+    "json2csv": "^6.0.0-alpha.2",
     "selenium-webdriver": "^4.23.0"
   }
 }

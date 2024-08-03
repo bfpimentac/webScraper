@@ -7,7 +7,8 @@ Welcome to the Web Scraper Challenge! This project is a technical challenge to b
 - Extracts product title, price, image URL, and description.
 - Handles scrolling to ensure all data is loaded.
 - Maximizes the browser window for better visibility.
-- Checks if the URL is valid and from the Netshoes site.
+- Validates that the URL is from the Netshoes site.
+- Appends multiple products to a CSV file, preserving the header.
 
 ## Prerequisites
 
@@ -42,7 +43,8 @@ To run the web scraper, execute the following command:
     node index.js <product-url>
    ```
 
-Replace <product-url> with the URL of the product page you want to scrape. The scraper will extract the title, price, image URL, and description from the Netshoes website.
+Replace <product-url> with the URL(s) of the product page(s) you want to scrape. You can provide multiple URLs separated by spaces. The scraper will extract the title, price, image URL, and description from each Netshoes product page and append the data to a CSV file.
+
 
 ## Output
 
@@ -57,18 +59,18 @@ The script will print the product details to the console in the following format
 }
 ```
 
-Title: The name of the product.
-Price: The price of the product.
-Image URL: The URL of the product's image.
-Description: A brief description of the product.
+- Title: The name of the product.
+- Price: The price of the product.
+- Image URL: The URL of the product's image.
+- Description: A brief description of the product.
 
 ## Error Handling
 
 - If the URL is not from Netshoes, the script will notify you and exit.
 - If the elements are not found or take too long to load, it will log an error message.
-
+- If the CSV file cannot be written or appended to, it will log an error message.
 
 ## Authors 
 
-[beatriz freire](https://github.com/bfpimentac)
+[Beatriz Freire](https://github.com/bfpimentac)
 
